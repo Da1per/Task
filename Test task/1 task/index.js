@@ -12,7 +12,7 @@ const createTimerAnimator = () => {
   let timer=  setInterval(()=>{
       if(!stateOn){clearInterval(timer)}
       h=(seconds>3600)?Math.trunc((seconds/60)/60):0
-      m=(seconds>60&&seconds<3600)?(Math.trunc(seconds/60)):Math.trunc((((seconds/60)/60)-Math.trunc((seconds/60)/60))*60)
+      m=(seconds>59&&seconds<3599)?(Math.trunc(seconds/60)):Math.trunc((((seconds/60)/60)-Math.trunc((seconds/60)/60))*60)
       s=(seconds<60)?seconds:(Math.round(((seconds/60)-Math.trunc(seconds/60))*60))
       timerEl.innerHTML=`${(String(h).length>1)?h:`0${h}`} : ${(String(m).length>1)?m:`0${m}`} : ${(String(s).length>1)?s:`0${s}`}`
       seconds--
