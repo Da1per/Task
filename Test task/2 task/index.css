@@ -1,3 +1,6 @@
+body{
+  background-color: #111111;
+}
 .header{
   padding-top: 5%;
 }
@@ -42,13 +45,26 @@ ul{
 .main_title span{
   font-size: 50px;
   font-weight: 900;
-  color:orange;
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #dd9900, #dd3355);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main_discription span{
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #ddbb00, #dd5500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   color:orange;
 }
 .main_under_discription{
   color: #dddddd;
+}
+.main_button{
+  color:#eeeeee;
+  background-color: #5599ff;
+  border: none;
+  
 }
 .mob{
   display: none
@@ -111,4 +127,15 @@ ul{
     color: #aaaaaa;
     text-decoration: underline
   }
+  .list p{
+    display: flex;
+    align-items: center;
+  }
+ .rect{
+   margin-right: 5%;
+   display: block;
+   width: 15px;
+   height: 2px;
+   background-image: linear-gradient(90deg, #dd9900, #dd3355);
+ }
 }
