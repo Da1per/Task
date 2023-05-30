@@ -1,8 +1,17 @@
 body{
-  background-color: #111111;
+  background: url(./img/Desktop.png)  ;
+  background-size:     cover;          
+  background-repeat:   no-repeat;
+  background-position: top center;      
+
 }
 .header{
-  padding-top: 5%;
+  padding-top: 4%;
+}
+.header span{
+  font-weight: 300;
+  font-size: 10px;
+  color: #E4E5EA;
 }
 .nav_bar_link{
   display:flex;
@@ -18,59 +27,120 @@ ul{
   display:flex;
   justify-content: space-between;;
 }
+.nav_bar_contacts a{
+  text-decoration: none;
+  color: #E4E5EA;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
 .nav_bar_link a{
-  color: #ffffff;
+  color: #E4E5EA;
   text-decoration: none;
   transition-duration: 0.5s;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
 }
 .nav_bar_link li a:hover{
-  background: #ffffff;
+  background: #E4E5EA;
   color:#000000;
 }
 .main{
-  padding-top: 10%
+  padding-top: 7%
 }
 .main_subtitle{
-  color:#dddddd;
   font-size: 25px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #E4E5EA;
 }
 .main_discription{
-  margin-top: 10%;
-  color:#dddddd;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: #E4E5EA;
 }
 .main_title{
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 48px;
+  color: #E4E5EA;
 }
 .main_title span{
-  font-size: 50px;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 900;
-  background-color: #2AA5A0;
-  background-image: linear-gradient(90deg, #dd9900, #dd3355);
+  font-size: 48px;
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
+}
+.main_under_discription {
+  color: #E4E5EA;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .main_discription span{
-    background-color: #2AA5A0;
-    background-image: linear-gradient(90deg, #ddbb00, #dd5500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  color:orange;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-.main_under_discription{
-  color: #dddddd;
+.main_under_discription h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #E4E5EA;
 }
-.main_button{
+.main_but_div{
+  display: flex;
+  justify-content: end;
+}
+.main_but{
   color:#eeeeee;
-  background-color: #5599ff;
+  box-sizing: border-box;
+  background: #4077F3;
   border: none;
+  height: 50px;
+  transition-duration:0.5s;
+}
+.main_but:hover{
   
+  border: 1px #0a1a3f solid ;
+}
+.main_but:active{
+  background: #1e3a7c;
 }
 .mob{
   display: none
 }
 .footer{
-  padding:10% 0 10% 0;
+  padding:6% 0 0 0;
 }
 .footer a{
   color:#eeeeee;
@@ -84,10 +154,21 @@ ul{
   color:#666666;
   font-size: 16px;
 }
-
+.content_end{
+  text-align: right;
+}
+.footer_con{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #E4E5EA;
+}
 @media (max-width: 550px) {
   .header{
-    background-color: #111111
+    background: #0E1014;
   }
   .nav_logo{
     display: none
@@ -98,12 +179,42 @@ ul{
   .nav_bar_contacts{
     display: none
   }
+  .nav_bar_link a{ 
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
   .main{
-    background-color:#222222;
+    background: url(./img/bg.png)  ;
+    background-size:     cover;          
+    background-repeat:   no-repeat;
+    background-position: top center;   
     padding-bottom: 10%;
   }
   .main_title{
-    color:#dddddd;
+    font-weight: 400;
+    font-size: 36px;
+  }
+  .main_title span{
+    font-weight: 900;
+    font-size: 36px;
+  }
+  .main_subtitle{
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .main_discription{
+    margin-top: 15%;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+  }
+  .main_discription span{
+    text-transform: lowercase;
+  }
+  .main_under_discription {
+    font-size: 13px;
   }
   .pc{
     display:none;
@@ -115,10 +226,13 @@ ul{
     flex-direction: column;
   }
   .footer{
-    background-color: #111111;
+    background: #0E1014;
   }
   .footer_subtitle{
     margin-bottom: 5%;
+  }
+  .content_end{
+    text-align: left;
   }
   .footer_con{
     color: #aaaaaa
